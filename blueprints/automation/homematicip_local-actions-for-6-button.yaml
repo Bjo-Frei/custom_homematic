@@ -102,7 +102,7 @@ action:
         sequence: !input "action_left_top_short"
       - conditions:
           - condition: template
-            value_template: "{{ trigger.event.data.type  == 'press_long' and trigger.event.data.subtype  == 1 }}"
+            value_template: "{{ trigger.event.data.type  == 'press_long_release' and trigger.event.data.subtype  == 1 }}"
         sequence: !input "action_left_top_long"
       - conditions:
           - condition: template
@@ -110,7 +110,7 @@ action:
         sequence: !input "action_right_top_short"
       - conditions:
           - condition: template
-            value_template: "{{ trigger.event.data.type  == 'press_long' and trigger.event.data.subtype  == 2 }}"
+            value_template: "{{ trigger.event.data.type  == 'press_long_release' and trigger.event.data.subtype  == 2 }}"
         sequence: !input "action_right_top_long"
       - conditions:
           - condition: template
@@ -118,7 +118,7 @@ action:
         sequence: !input "action_left_middle_short"
       - conditions:
           - condition: template
-            value_template: "{{ trigger.event.data.type  == 'press_long' and trigger.event.data.subtype  == 3 }}"
+            value_template: "{{ trigger.event.data.type  == 'press_long_release' and trigger.event.data.subtype  == 3 }}"
         sequence: !input "action_left_middle_long"
       - conditions:
           - condition: template
@@ -126,7 +126,7 @@ action:
         sequence: !input "action_right_middle_short"
       - conditions:
           - condition: template
-            value_template: "{{ trigger.event.data.type  == 'press_long' and trigger.event.data.subtype  == 4 }}"
+            value_template: "{{ trigger.event.data.type  == 'press_long_release' and trigger.event.data.subtype  == 4 }}"
         sequence: !input "action_right_middle_long"
       - conditions:
           - condition: template
@@ -134,7 +134,7 @@ action:
         sequence: !input "action_left_bottom_short"
       - conditions:
           - condition: template
-            value_template: "{{ trigger.event.data.type  == 'press_long' and trigger.event.data.subtype  == 5 }}"
+            value_template: "{{ trigger.event.data.type  == 'press_long_release' and trigger.event.data.subtype  == 5 }}"
         sequence: !input "action_left_bottom_long"
       - conditions:
           - condition: template
@@ -142,7 +142,7 @@ action:
         sequence: !input "action_right_bottom_short"
       - conditions:
           - condition: template
-            value_template: "{{ trigger.event.data.type  == 'press_long' and trigger.event.data.subtype  == 6 }}"
+            value_template: "{{ trigger.event.data.type  == 'press_long_release' and trigger.event.data.subtype  == 6 }}"
         sequence: !input "action_right_bottom_long"
 mode: parallel
 max: 10
